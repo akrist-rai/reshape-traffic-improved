@@ -23,9 +23,9 @@
 ## 🔹 Core Problem with Normal GAT
 
 GAT aggregates neighbors like:
-[
-h_i^{new} = \sum_{j \in \mathcal{N}(i)} \alpha_{ij} h_j
-]
+
+> h<sub>i</sub><sup>new</sup> = ∑<sub>j ∈ 𝒩(i)</sub> α<sub>ij</sub> h<sub>j</sub>
+
 
 But under heterophily:
 
@@ -40,9 +40,9 @@ But under heterophily:
 
 HA-GAT **does not blindly mix** neighbors.
 
-[
-h_i^{new} = \lambda h_i + \sum_{j} \alpha_{ij} h_j
-]
+
+> h<sub>i</sub><sup>new</sup> = λ h<sub>i</sub> + ∑<sub>j</sub> α<sub>ij</sub> h<sub>j</sub>
+
 
 * Self-node kept dominant
 * Prevents feature dilution
@@ -56,9 +56,8 @@ Instead of “important vs not important”, HA-GAT learns:
 * **Helpful neighbors**
 * **Harmful neighbors**
 
-[
-\alpha_{ij} \in [-1, +1]
-]
+
+> α<sub>ij</sub> ∈ [−1, +1]
 
 Negative attention = **repulsion**, not attraction.
 
@@ -73,9 +72,9 @@ HA-GAT combines:
 * 1-hop (different)
 * 2-hop (often similar!)
 
-[
-h_i^{final} = h_i^{(1)} + h_i^{(2)}
-]
+> h<sub>i</sub><sup>final</sup> = h<sub>i</sub><sup>(1)</sup> + h<sub>i</sub><sup>(2)</sup>
+
+
 
 ---
 
@@ -115,17 +114,4 @@ Classifier
 | Real-world robustness     | Low  | Medium | High   |
 
 ---
-
-## 🔹 Where HA-GAT Shines 🔥
-
-Perfect for **your kind of advanced projects**:
-
-* 🚦 Traffic congestion vs free roads
-* 🛡 Cybersecurity (attacker ↔ defender)
-* 💳 Fraud detection
-* 🌐 Web & citation graphs
-* 🧬 Biological interaction graphs
-
----
-
 
