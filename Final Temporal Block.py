@@ -1,3 +1,4 @@
+#Now the model understands both sudden jams and daily patterns
 short, mid, long = build_multiscale_inputs(x)
 
 f_s = self.temporal_short(short)
