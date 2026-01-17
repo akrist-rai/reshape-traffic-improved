@@ -1,3 +1,4 @@
+#this is the improvenment snipt (full code (not including this) in reshaping traffic  )
 def build_multiscale_inputs(x):
     # x: [B, T, N, F] where T >= 48
     short = x[:, -12:]                       # recent 1 hour
