@@ -1,3 +1,5 @@
+#Let the model learn how much to trust each scale.
+
 class TemporalScaleAttention(nn.Module):
     def __init__(self, dim):
         super().__init__()
