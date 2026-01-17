@@ -1,3 +1,6 @@
+#Each scale gets its own temporal model (Mamba / Transformer / GRU).
+
+
 class TemporalEncoder(nn.Module):
     def __init__(self, dim):
         super().__init__()
